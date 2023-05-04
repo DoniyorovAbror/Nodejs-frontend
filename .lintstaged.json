@@ -6,4 +6,4 @@
       "eslint"
     ],
     "*.scss": "stylelint"
-  }
+}
