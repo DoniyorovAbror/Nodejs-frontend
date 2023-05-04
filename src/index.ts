@@ -42,7 +42,7 @@ const accept = document
                                     <td>${item.name}</td>
                                     <td>${item.email}</td>
                                     <td>${item.phone}</td>
-                                    </tr>`;
+                                    </tr>`
                     }
                 });
     });
