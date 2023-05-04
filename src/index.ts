@@ -25,7 +25,7 @@ const accept = document
                             <td>${data.id}</td>
                             <td>${data.name}</td>
                             <td>${data.email}</td>
-                            <td>${data.phone}</td>`;
+                            <td>${data.phone}</td>`
                 });
         } else
             tables.innerHTML = fetch("http://localhost:3000/contacts/", {
