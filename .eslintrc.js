@@ -18,5 +18,6 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        "semi": [2, "always"]
     }
 }
