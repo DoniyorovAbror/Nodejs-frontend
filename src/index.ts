@@ -25,7 +25,7 @@ const accept = document
                             <td>${data.id}</td>
                             <td>${data.name}</td>
                             <td>${data.email}</td>
-                            <td>${data.phone}</td>`
+                            <td>${data.phone}</td>`;
                 });
         } else
             tables.innerHTML = fetch("http://localhost:3000/contacts/", {
@@ -34,7 +34,7 @@ const accept = document
                 .then((response) => response.json())
                 .then((data) => {
                     tables.innerHTML =
-                        "<tr><th>id</th><th>name</th><th>email</th><th>phone</th> </tr>"
+                        "<tr><th>id</th><th>name</th><th>email</th><th>phone</th> </tr>";
                             for (const item of data) {
                             tables.innerHTML += `
                                     <tr>
@@ -42,7 +42,7 @@ const accept = document
                                     <td>${item.name}</td>
                                     <td>${item.email}</td>
                                     <td>${item.phone}</td>
-                                    </tr>`
+                                    </tr>`;
                     }
                 });
     });
