@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build-dev": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "start": "webpack serve --config webpack.dev.js",
+    "server": "json-server database.json",
+    "prepare": "husky install",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix"
+  },
+  "author": "abror",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "html-webpack-plugin": "^5.5.1",
+    "husky": "^8.0.3",
+    "json-server": "^0.17.3",
+    "mini-css-extract-plugin": "^2.7.5",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "stylelint-webpack-plugin": "^4.1.1",
+    "terser-webpack-plugin": "^5.3.7",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "eslint": "^8.39.0",
+    "lint-staged": "^13.2.2"
+  }
+}

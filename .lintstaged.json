@@ -1,0 +1,9 @@
+{
+    "*.ts": [
+      "eslint"
+    ],
+    "*.html": [
+      "eslint"
+    ],
+    "*.scss": "stylelint"
+  }
