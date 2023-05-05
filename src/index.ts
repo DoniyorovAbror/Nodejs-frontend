@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use strict";
-import "./styles.css";
+import "./styles.scss";
 
 const tables: Element | any = document.querySelector(".tables");
 
@@ -35,8 +35,8 @@ const accept = document
                 .then((data) => {
                     tables.innerHTML =
                         "<tr><th>id</th><th>name</th><th>email</th><th>phone</th> </tr>";
-                            for (const item of data) {
-                            tables.innerHTML += `
+                    for (const item of data) {
+                        tables.innerHTML += `
                                     <tr>
                                     <td>${item.id}</td>
                                     <td>${item.name}</td>
